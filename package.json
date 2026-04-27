@@ -1,6 +1,6 @@
 {
   "name": "@demografix/n8n-nodes-nationalize",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "n8n community node for Nationalize.io API - predict nationality based on names with probability scores",
   "license": "MIT",
   "homepage": "https://github.com/DemografixGenderize/n8n-nodes-nationalize#readme",
