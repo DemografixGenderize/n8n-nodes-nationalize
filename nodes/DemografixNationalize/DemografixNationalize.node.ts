@@ -8,14 +8,14 @@ export class DemografixNationalize implements INodeType {
 		group: ['transform'],
 		version: 1,
 		subtitle: '={{$parameter["operation"]}}',
-		description: 'Get nationality prediction for a given name using the Nationalize.io API (100 free requests/day without API key, more with subscription)',
+		description: 'Get nationality prediction for a given name using the Nationalize.io API (free tier: 2,500 requests/month)',
 		defaults: {
 			name: 'Nationalize',
 		},
 		usableAsTool: true,
 		inputs: [NodeConnectionTypes.Main],
 		outputs: [NodeConnectionTypes.Main],
-		credentials: [{ name: 'demografixNationalizeApi', required: false }],
+		credentials: [{ name: 'demografixNationalizeApi', required: true }],
 		requestDefaults: {
 			baseURL: 'https://api.nationalize.io',
 			headers: {

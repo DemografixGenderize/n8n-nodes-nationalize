@@ -23,20 +23,19 @@ Follow the [installation guide](https://docs.n8n.io/integrations/community-nodes
 
 ## Credentials
 
-### Free Tier (No Authentication Required)
-You can start using this node immediately without any credentials. The free tier provides:
-- **100 requests per day** per IP address
-- No signup required
-- No API key needed
+An API key is required for all Nationalize.io requests.
 
-### Paid Tier (API Key Required)
-For higher request volumes, you can subscribe to a paid plan at [nationalize.io](https://nationalize.io) with various tier options for increased rate limits.
+### Free tier — 2,500 requests/month
+Sign up at [nationalize.io](https://nationalize.io) for a free account. Free accounts include 2,500 requests per month at no cost.
 
-**Setting up credentials:**
+### Paid tiers
+For higher volumes, subscribe to a paid plan at [nationalize.io](https://nationalize.io) — tiers cover increased monthly request quotas.
+
+### Setup
 1. Sign up at [nationalize.io](https://nationalize.io)
-2. Subscribe to a paid plan to receive your API key
+2. Copy your API key from the dashboard
 3. In n8n, create new "Nationalize API" credentials
-4. Enter your API key
+4. Paste the API key
 5. Test the credentials to verify they work
 
 ## Compatibility
