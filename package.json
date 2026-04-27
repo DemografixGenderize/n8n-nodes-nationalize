@@ -1,0 +1,58 @@
+{
+  "name": "@demografix/n8n-nodes-nationalize",
+  "version": "1.0.0",
+  "description": "n8n community node for Nationalize.io API - predict nationality based on names with probability scores",
+  "license": "MIT",
+  "homepage": "https://github.com/DemografixGenderize/n8n-nodes-nationalize#readme",
+  "keywords": [
+    "n8n-community-node-package",
+    "n8n",
+    "nationalize",
+    "nationality",
+    "demographics",
+    "api"
+  ],
+  "author": {
+    "name": "Demografix",
+    "email": "info@genderize.io"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DemografixGenderize/n8n-nodes-nationalize.git"
+  },
+  "scripts": {
+    "build": "n8n-node build",
+    "build:watch": "tsc --watch",
+    "dev": "n8n-node dev",
+    "lint": "n8n-node lint",
+    "lint:fix": "n8n-node lint --fix",
+    "release": "n8n-node release",
+    "prepublishOnly": "n8n-node prerelease"
+  },
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "n8n": {
+    "n8nNodesApiVersion": 1,
+    "strict": true,
+    "credentials": [
+      "dist/credentials/DemografixNationalizeApi.credentials.js"
+    ],
+    "nodes": [
+      "dist/nodes/DemografixNationalize/DemografixNationalize.node.js"
+    ]
+  },
+  "devDependencies": {
+    "@n8n/node-cli": "*",
+    "eslint": "9.32.0",
+    "prettier": "3.8.3",
+    "release-it": "^20.0.1",
+    "typescript": "6.0.3"
+  },
+  "peerDependencies": {
+    "n8n-workflow": "*"
+  }
+}
