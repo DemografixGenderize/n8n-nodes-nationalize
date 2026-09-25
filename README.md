@@ -2,7 +2,7 @@
 
 This is an n8n community node. It lets you use Nationalize.io in your n8n workflows.
 
-Nationalize.io is a nationality prediction API that estimates the most likely countries of origin for a given name based on statistical analysis.
+Nationalize.io is a nationality prediction API that estimates the most likely nationalities for a given name based on statistical analysis.
 
 [n8n](https://n8n.io/) is a [fair-code licensed](https://docs.n8n.io/sustainable-use-license/) workflow automation platform.
 
@@ -19,7 +19,7 @@ Follow the [installation guide](https://docs.n8n.io/integrations/community-nodes
 
 ## Operations
 
-- **Get Nationality**: Predict the most likely countries of origin for a given name, ranked by probability
+- **Get Nationality**: Predict the most likely nationalities for a given name, ranked by probability
 
 ## Credentials
 
