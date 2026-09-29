@@ -34,7 +34,7 @@ export class DemografixNationalize implements INodeType {
 						name: 'Get Nationality',
 						value: 'getNationality',
 						action: 'Get nationality prediction for a name',
-						description: 'Get the predicted countries of origin for a given name',
+						description: 'Get the most likely nationalities for a given name, ranked by probability',
 						routing: {
 							request: {
 								method: 'GET',
